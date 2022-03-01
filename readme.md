@@ -4,14 +4,14 @@ Nowadays, I'm using __BSPWM__ on Archlinux, also I've my old qtile configuration
 Here I'm going to put some pictures about my dotfiles:
 
 >Rofi
-(/pics/rofi.png)
+![image](/pics/rofi.png)
 
 >Screen 1
-(/pics/screen1.png)
+![image](/pics/screen1.png)
 
 >Screen2
-(/pics/screen2.png)
+![image](/pics/screen2.png)
 
 >Neovim
-(/pics/nvim.png)
+![image](/pics/nvim.png)
 
