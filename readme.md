@@ -1,17 +1,15 @@
 # My dotfiles
 
-Nowadays, I'm using __BSPWM__ on Archlinux, also I've my old qtile configuration too.
-Here I'm going to put some pictures about my dotfiles:
+Currently, I'm using `QTILE WM`, a DE based on *LG3D*. I've set it up with
+in a modular pattern using python.
 
->Rofi
-![image](/pics/rofi.png)
+*Terminal*
+![image](/pics/terminal.png)
 
->Screen 1
-![image](/pics/screen1.png)
+*Layouts*
+![image](/pics/layouts.png)
 
->Screen2
-![image](/pics/screen2.png)
+*Wallpaper*
+![image](/pics/wallpaper.png)
 
->Neovim
-![image](/pics/nvim.png)
-
+If you want to download the wallpaper, !(🔗 click here)[/wallpaper/wallpaper.jpg]
