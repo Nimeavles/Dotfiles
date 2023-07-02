@@ -1,6 +1,0 @@
-cyan = ["#40ffc9","#40ffc9"]
-green = ["#9eff62","#9eff62"]
-yellow = ["#f3ff18","#f3ff18"]
-blue = ["#199bff","#199bff"]
-bar = ["#21201f","#21201f"]
-over_board = ["#717155","#717155"] 

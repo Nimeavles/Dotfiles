@@ -1,8 +1,14 @@
+# Qtile workspaces
+
 from libqtile.config import Key, Group
 from libqtile.command import lazy
-from settings.keys import mod, keys
+from .keys import mod, keys
 
-groups = [Group(i) for i in ["" ,  "II" ,  "III"  ,  "IV" , "VI" , "VII", "VIII"]]
+# Get the icons at https://www.nerdfonts.com/cheat-sheet (you need a Nerd Font)
+
+groups = [Group(i) for i in [
+    "   ", "   ", "   ", "   ", "  ", "   ", "   ", "   ", "   ",
+]]
 
 for i, group in enumerate(groups):
     actual_key = str(i + 1)

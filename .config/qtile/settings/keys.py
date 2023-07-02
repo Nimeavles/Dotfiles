@@ -26,33 +26,19 @@ keys = [
     # Unsplit = 1 window displayed, like Max layout, but still with
     # multiple stack panes
 
+    Key([mod], "m", lazy.spawn("rofi -show drun"), desc="Run rofi"),
+    Key([mod, "shift"], "m", lazy.spawn("rofi -show emoji"), desc="Run rofi emoji"),
+
+    Key([mod, "control"], "s", lazy.spawn("shutdown now"), desc="Shutdown the system"),
+    Key([mod, "control"], "h", lazy.spawn("sudo pm-suspend"), desc="Suspend the System"),
+    
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
     Key([mod], "w", lazy.window.kill(), desc="Kill focused window"),
 
     Key([mod, "control"], "r", lazy.restart(), desc="Restart Qtile"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
-    Key([mod], "Return", lazy.spawn("alacritty"), desc="Launch terminal"),
-
-    # Menu
-    Key([mod], "m", lazy.spawn("rofi -show drun")),
-
-    #Browser
-    Key([mod], "b", lazy.spawn("firefox")),
-
-    # Window Nav
-    Key([mod, "shift"], "m", lazy.spawn("rofi -show")),
-
-    # Volume
-    Key([], "XF86AudioLowerVolume", lazy.spawn(
-        "pactl set-sink-volume @DEFAULT_SINK@ -5%"
-    )),
-    Key([], "XF86AudioRaiseVolume", lazy.spawn(
-        "pactl set-sink-volume @DEFAULT_SINK@ +5%"
-    )),
-    Key([], "XF86AudioMute", lazy.spawn(
-        "pactl set-sink-mute @DEFAULT_SINK@ toggle"
-    )),
+    Key([mod], "Return", lazy.spawn("kitty"), desc="Launch terminal"),
 
     #Thunar
     Key([mod], "e", lazy.spawn("thunar")),
@@ -60,17 +46,9 @@ keys = [
     #screenshots
     Key([mod, "shift"], "s", lazy.spawn("flameshot gui")),
 
-    # Brightness
-    Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +10%")),
-    Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 10%-")),
-
     #Vscode
     Key([mod],"v", lazy.spawn("code")),
 
     #Discord
     Key([mod], "d", lazy.spawn("discord")),
-
-    Key([mod], "y", lazy.spawn("scrot")),
-
-
 ]
